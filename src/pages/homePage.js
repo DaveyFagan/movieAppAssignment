@@ -56,6 +56,13 @@ const MovieListPage = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const addToFavourites = (movieId) => {
+    const updatedMovies = movies.map((m) =>
+      m.id === movieId ? { ...m, favourite: true } : m
+    );
+    setMovies(updatedMovies);
+  };
+
   return (
     <>
     <Grid container className={classes.root}>
@@ -63,7 +70,7 @@ const MovieListPage = (props) => {
         <Header title={"Home Page"} />
       </Grid>
       <Grid item container spacing={5}>
-        <MovieList movies={displayedMovies}></MovieList>
+        <MovieList movies={displayedMovies} selectFavourite={addToFavourites} />
       </Grid>
     </Grid>
     <Fab
