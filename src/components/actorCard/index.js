@@ -57,9 +57,9 @@ export default function ActorCard({ actor, action }) {
       />
       <CardActions disableSpacing>
         {action(actor)}
-        <Link to={`/movies/${actor.id}`}>
+        <Link to={`/actorsmovies/${actor.id}`}>
           <Button variant="outlined" size="medium" color="primary">
-            More Info ...
+            Actors movies ...
           </Button>
         </Link>
       </CardActions>
