@@ -62,6 +62,11 @@ export default function ActorCard({ actor, action }) {
             Actors movies ...
           </Button>
         </Link>
+        <Link to={`/actor/${actor.id}`}>
+          <Button variant="outlined" size="medium" color="primary">
+            Actors Details ...
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );

@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MovieHeader = (props) => {
+const ActorHeader = (props) => {
   const classes = useStyles();
-  const movie = props.movie;
-  console.log("The movie header props.movie is :", movie)
+  const actor = props.actor;
   const navigate = useNavigate();
+  console.log("The actors details for header are : ", actor)
   return (
     <Paper component="div" className={classes.root}>
       <IconButton aria-label="go back"  onClick={() => navigate(-1)}>
@@ -32,12 +32,12 @@ const MovieHeader = (props) => {
       </IconButton>
 
       <Typography variant="h4" component="h3">
-        {movie.title}
-        <a href={movie.homepage}>
+        {actor.name}
+        <a href={actor.homepage}>
           <HomeIcon color="primary" />
         </a>
         <br />
-        <span className={classes.tagLine}>{`   "${movie.tagline}"`} </span>
+        <span className={classes.tagLine}>{`   "${actor.known_for_department}"`} </span>
       </Typography>
       <IconButton aria-label="go forward"  onClick={() => navigate(1)}>
         <ArrowForwardIcon color="primary" fontSize="large" />
@@ -46,4 +46,4 @@ const MovieHeader = (props) => {
   );
 };
 
-export default MovieHeader;
+export default ActorHeader;
