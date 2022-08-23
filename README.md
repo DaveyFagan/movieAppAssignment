@@ -1,22 +1,29 @@
 
 # ICT Skills 2 Assignment.
 
-Name: [your name]
+Name: David Fagan
 
 ## Overview.
 
-[ A paragraph on your React app's concept followed by a bullet-point list of its feature set - only list new/modified features if you are expanding the Movies app. ]
-
-e.g. 
-+ Feature 1
-+ Feature 2
-+ Feature 3
-+ etc
+The Movie Fan App is a service that helps you discover different movies and actors.
+ 
++ Can see what actors are in a movie
++ Can see all the movies for a certain actor
++ Can have a look at the actors details
++ Can discover similar movies
 + etc
 
 ## Setup requirements.
 
 [ Briefly state (to a third party) the setup steps necessary to run your app/client locally, e.g. .env and any other config files.]
+To run the app on your local machine, you will have to download the file from this repo. In the project folder you will then have to create a .env file. The .env file will contain 2 variables - REACT_APP_TMDB_KEY=.... your API key value ... and FAST_REFRESH=false.
+
+To get your API key you need to sign up to The TMDB API and create an account - https://www.themoviedb.org/signup
+
+Log in to your account. 
+
+To get a key, follow this sequence:
+"Settings > API > Create > Click on Request an API > Click "Developer" > Fill in Details"
 
 ## App Design.
 
