@@ -43,26 +43,16 @@ e.g.
 
 ### Views/Pages.
 
-[ For each view in your app, show a screenshot and caption - only new/modified ones in the case of the Movies Fan app. If necessary, use multiple screenshots to cover a view's full capability.
-
->Lists movies from the Discover endpoint. Filtering on title and genre attributes is supported.
-
+>Lists all the similar movies to a movie. Filter on genre is supported
 ![][d1]
-
-![][d2]
-
->Shows detailed information on a specific movie
-
-![][detail]
-
->Lists all the similar movies to a movie.
-![][d1]
+![][d5]
 
 >Lists all actors of a movie.
 ![][d2]
 
->Lists all movies of an actor.
+>Lists all movies of an actor. Filter on genre is supported
 ![][d3]
+![][d6]
 
 >Shows detailed information of a certain actor.
 ![][d4]
@@ -86,28 +76,10 @@ e.g.
 
 ![][caching]
 
-## Authentication (if relevant).
-
-[Briefly state how you implemented authentication for the app, e.g. basic, Firebase, etc. Also, list the routes that are private/protected.]
-
-e.g.
-+ /reviews/:id
-+ /movies/favourites
-
-## Server-side persistence (if relevant)
-
-[ Specify the persistence 
-platform your app uses (e.g. TMDB lists, Firestore) and itemize the data it persists.]
-
-## Additional features (if relevant),
-
-[Mention any additional user features of your app that may not be obvious from the previous sections, e.g. pagination, extended filtering/sorting, searching.]
-
-## Independent learning (if relevant),
-
-[Briefly explain any aspects of your assignment work that required independent learning (i.e. not addressed in the lectures or labs) on your behalf., e.g. 3rd-party components, libraries, tools. Include source code references.]
 
 [d1]: ./public/similarMovies.PNG
 [d2]: ./public/movieActors.PNG
 [d3]: ./public/actorMovies.PNG
 [d4]: ./public/actorDetails.PNG
+[d5]: ./public/similarMovieGenreFilter.PNG
+[d6]: ./public/actorMovieGenreFilter.PNG
