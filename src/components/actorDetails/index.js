@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Chip from "@material-ui/core/Chip";
 import Paper from "@material-ui/core/Paper";
-import AccessTimeIcon from "@material-ui/icons/AccessTime";
-import MonetizationIcon from "@material-ui/icons/MonetizationOn";
+import CakeIcon from "@material-ui/icons/Cake";
+import PlaceIcon from "@material-ui/icons/Place";
 import StarRate from "@material-ui/icons/StarRate";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -59,16 +59,16 @@ const ActorDetails = ( {actor}) => {
       <div className={classes.chipRoot}>
       
       <Paper component="ul" className={classes.chipSet}>
-        <Chip icon={<AccessTimeIcon />} label={`${actor.place_of_birth}`} />
+        <Chip icon={<PlaceIcon />} label={`${actor.place_of_birth}`} />
         <Chip
-          icon={<MonetizationIcon />}
+          icon={<CakeIcon />}
           label={`${actor.birthday}`}
         />
         <Chip
           icon={<StarRate />}
           label={`${actor.popularity}`}
         />
-        <Chip label={`Released: ${actor.deathDay}`} />
+        <Chip label={`Death: ${actor.deathday}`} />
       </Paper>
       </div>
       
