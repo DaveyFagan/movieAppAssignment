@@ -82,4 +82,4 @@ e.g.
 [d3]: ./public/actorMovies.PNG
 [d4]: ./public/actorDetails.PNG
 [d5]: ./public/similarMovieGenreFilter.PNG
-[d6]: ./public/actorMovieGenreFilter.PNG
+[d6]: ./public/actorMovieFilterGenre.PNG
