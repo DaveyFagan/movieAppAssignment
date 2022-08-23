@@ -36,16 +36,15 @@ To get a key, follow this sequence:
 [List the set of routes your app supports - only mention new instances if you expanded the Movies Fan app. State the view linked with each route.] 
 
 e.g.
-+ /movies/:id - detailed information on a specific movie.
-+ /movies/upcoming - lists movies soon to be shown in cinemas.
-+ etc.
-+ etc.
++ /movies/similarmovies/:id - list movies similar to id.
++ /movies/movieactors/:id - list actors for a movie.
++ /actorsmovies/:id - list movies for a actor.
++ /actor/:id - detailed information on an actor.
 
 ### Views/Pages.
 
 [ For each view in your app, show a screenshot and caption - only new/modified ones in the case of the Movies Fan app. If necessary, use multiple screenshots to cover a view's full capability.
 
-e.g.
 >Lists movies from the Discover endpoint. Filtering on title and genre attributes is supported.
 
 ![][d1]
@@ -56,6 +55,17 @@ e.g.
 
 ![][detail]
 
+>Lists all the similar movies to a movie.
+![][d1]
+
+>Lists all actors of a movie.
+![][d2]
+
+>Lists all movies of an actor.
+![][d3]
+
+>Shows detailed information of a certain actor.
+![][d4]
 
 ### Component catalogue.
 
@@ -97,8 +107,7 @@ platform your app uses (e.g. TMDB lists, Firestore) and itemize the data it pers
 
 [Briefly explain any aspects of your assignment work that required independent learning (i.e. not addressed in the lectures or labs) on your behalf., e.g. 3rd-party components, libraries, tools. Include source code references.]
 
-[d1]: ./public/discover1.png
-[d2]: ./public/discover2.png
-[detail]: ./public/detail.png
-[caching]: ./public/caching.png
-[stories]: ./public/stories.png
+[d1]: ./public/similarMovies.PNG
+[d2]: ./public/movieActors.PNG
+[d3]: ./public/actorMovies.PNG
+[d4]: ./public/actorDetails.PNG
