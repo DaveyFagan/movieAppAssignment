@@ -33,8 +33,6 @@ To get a key, follow this sequence:
 
 ### Routing/Navigation.
 
-[List the set of routes your app supports - only mention new instances if you expanded the Movies Fan app. State the view linked with each route.] 
-
 e.g.
 + /movies/similarmovies/:id - list movies similar to id.
 + /movies/movieactors/:id - list actors for a movie.
@@ -56,26 +54,6 @@ e.g.
 
 >Shows detailed information of a certain actor.
 ![][d4]
-
-### Component catalogue.
-
-[ Use the Storybook UI to highlight the new components for which you developed stories.]
-e.g.
-
-![][stories]
-
-## Caching.
-
-[ List the TMDB server state cached by the app. Include a screenshot(s) of the react-query dev tools to validate your list.]
-
-e.g.
-+ Discover movies (pagination support)
-+ Movie details
- + etc
-+ etc
-
-![][caching]
-
 
 [d1]: ./public/similarMovies.PNG
 [d2]: ./public/movieActors.PNG
